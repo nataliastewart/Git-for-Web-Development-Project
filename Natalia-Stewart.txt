@@ -1,0 +1,118 @@
+https://codepen.io/nataliastewart/pen/eYNpzYd?editors=1100
+ 1. What is Semantic HTML? 
+ Semantic HTML introduces meaning to the web page rather than just presentation.
+    2. What is HTML used for? 
+    Gives structure to the website
+    3. What is an attribute and where do we put it? 
+    HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    h1 is the tag to give the most importance and size to the element. Usually we use it on the title of the website.
+    5. Name two tags that have required attributes
+    a (anchor) tag: required attribute: href, without the link has no destination, and img tag : required attributes: src, without we don’t have an image to display.
+    6. What do we put in the head of our HTML document? 
+    The <head> tag in HTML is used to define the head portion of the document which contains information related to the document. Usually is where we put the Title of the website.
+    7. What is an id?
+    The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document). The id value can be used by CSS and JavaScript to perform certain tasks for the element with the specific id value. 
+    8. What elements can I add an id to? 
+    The id attribute can be used on any HTML element.
+    9. How many times can I use the same id on a page? 
+    The id value is case-sensitive. one.
+    10. What is a class? 
+    The HTML class attribute is used to define equal styles for elements with the same class name. So, all HTML elements with the same class attribute will get the same style.
+    11. What elements can I add a class to? 
+    The class attribute can be used on any HTML element.
+    12. How many times can I use the same class on a page? 
+    HTML elements can have more than one class name.
+    13. How do I get my link to open in a new tab?
+    The short answer is: just add a target="_blank" attribute to your links (anchor tags). Now when your visitors click that link, it will open in a new window or tab (depending on which web browser they are using and how they configured that browser).
+    14. What is the alt attribute used for? 
+    The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+    15. How do I reference an id?
+    In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”).
+    16. What is the difference between a section and a div
+     The section tag defines sections in a document like chapters, headers, footers whereas div tag defines a division in an HTML document. And <section> is a good choice for marking up the relevant content sections of your document whereas, you can use a div as a wrapper for any styling purposes.
+    17. What is CSS used for? 
+    CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. Is the language to style the website.
+    18. How to we select an element? Example - every h2 on the page
+    h2 {}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    Each element can have only one ID : <h2 id="C4">Chapter 4</h2>. Class attribute is used to define equal styles for elements with the same class name.
+So, all HTML elements with the same class attribute will get the same style.
+ Exemple:
+ <div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+    20. How do we select classes in CSS?
+    .class {
+  css declarations;
+}
+    21. How do we select a p element with a single class of “human””?
+    22. What is a parent child selector? When would this be useful? 
+    The ("parent > child") selector selects all elements that are a direct child of the specified element. The nested list is a perfect example of why this selector is useful. It can be thought of as a way to prevent styling from cascading down further than you would like it to.
+    23. How do you select all links within a div with the class of sidebar?
+     
+    24. What is a pseudo selector?
+    A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+    25. What do we use the change the spacing between lines?
+    Padding 
+    26. What do we use to change the spacing between letters?
+    The letter-spacing property controls the amount of space between each letter in a given element or block of text.
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform property
+    28. How do I add a 1px border around my div that is dotted and black?
+    div {
+        border-style: dotted;
+        border-color: black;
+}
+    29. How do I select everything on the page? 
+    *{}
+    30. How do I write a comment in CSS?
+    /* */
+    31. How do I find out what file I am in, when I am using the command line?
+    we have to type pwd 
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    You have to type ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    rm exemple.txt. We have to be careful because once you delete, there is no way to recycle. Its permanet.
+    34. Why should I use version control? 
+    Version control helps teams solve these kinds of problems, tracking every individual change by each contributor and helping prevent concurrent work from conflicting. Changes made in one part of the software can be incompatible with those made by another developer working at the same time.
+    35. How often should I commit to github?
+    commit whenever you finish a step.
+
+    36. What is the command we would use to push our repo up to github?
+    push -u origin "repo" 
+
+    37. Walk me through Lambda's git flow. 
+    Create your repo and fork.
+    Add your TL as colaborator.
+    Clone and copy the link of your repo.
+    On your CLI type cd and choose what diretory you want to put your link.
+    Use git clone <link-to-repo> to put the link in the Diretory that your have chosen.
+    cd into the newly created repo using the cd <repo-name> command
+    Use the git checkout -b 'firstname-lastname' command to create your own branch name for the repo (this is the branch that you will be doing your work on)
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the fix for the box model? 
